@@ -142,14 +142,14 @@ llama.loadAudio = function(format, isGapless, mediaSource, waveform) {
     while (regions.length > 0) {
       var mark_region = regions.shift();
       if (mark_region[0] == mark_region[1]) {
-        waveform.mark({color: '#00FF00', position: mark_region[0], width: 1});
+      //???  waveform.mark({color: '#00FF00', position: mark_region[0], width: 1});
       } else {
-        waveform.mark({
+      /*???  waveform.mark({
           color: '#FF0000',
           position: mark_region[0],
           width: Math.ceil((mark_region[1] - mark_region[0]) *
                            waveform.params.minPxPerSec)
-        });
+        });*/
       }
     }
   }
