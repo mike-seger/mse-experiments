@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="wavesurfer.min.js"></script>
+<script src="peaks.js"></script>
+<script src="gapless.js"></script>
+
+<style>
+
+.play-overlay, .waveform, .waveform-container {
+  min-height: 80px;
+  margin: auto;
+  width: 550px;
+}
+
+.play-overlay {
+  background-color: #999;
+  opacity: .3;
+  z-index: 10;
+  position: absolute;
+}
+
+.play-overlay:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>
+  <div class="waveform-container">
+    <span class="play-overlay"></span>
+    <div id="waveform_mp3_gap" class="waveform"></div>
+  </div>
+
+  <div style="height:50px;"></div>
+
+  <div class="waveform-container">
+    <span class="play-overlay"></span>
+    <div id="waveform_mp3_gapless" class="waveform"></div>
+  </div>
+
+  <div style="height:50px;"></div>
+
+  <div class="waveform-container">
+    <span class="play-overlay"></span>
+    <div id="waveform_mp4_gapless" class="waveform"></div>
+  </div>
+
+</body>
+</html>
